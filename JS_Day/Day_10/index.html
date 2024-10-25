@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT HANDLING</title>
+</head>
+
+<body>
+    <div id="main">
+        <h1>Add a click event listener to a button that changes the text content of a paragraph.
+        </h1>
+        <p id="task1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quaerat eius voluptas adipisci
+            sed sapiente? Sapiente ipsam voluptate odit numquam.</p>
+        <button id="submit">Press to Change</button>
+    </div>
+    <div id="task2">
+        <div>
+            <h1>Task 2: Add a double-click event listener to an image that toggles its visibility.</h1>
+            <img id="imgToggle"
+                src="https://images.pexels.com/photos/757185/pexels-photo-757185.jpeg?auto=compress&cs=tinysrgb&w=500&h=2500&dpr=2"
+                alt="img" />
+            <div>
+                <button id="imgBtn">Click to toggle Image</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="taks3" style="height: 500px; width: 100%">
+        <h1>Task:3,4 _Add a mouseover and mouseout event listener to an element that changes its background color</h1>
+    </div>
+
+    <div id="task5">
+        <h1>
+            Task 5: Add a keydown event listener to an input field that logs the key pressed to the console.
+        </h1>
+        <input placeholder="Enter Text to print on console" id="inptHolder" />
+        <p id="inputPara"></p>
+    </div>
+
+    <div id="task7">
+        <h2> Task 7: Add a submit event listener to a form that prevents the default submission and logs the form data to the console.</h2>
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Task-8 Add a change event listener to a select dropdown that displays the selected value in a paragraph.</h2>
+        <select id="selectOpt">
+            <option value="Cars">Cars</option>
+            <option value="Bikes">Bikes</option>
+            <option value="Trucks">Trucks</option>
+            <option value="Buses">Buses</option>
+        </select>
+        <p id="valueSelect"></p>
+    </div>
+
+    <div>
+        <h2>Task 9: Add a click event listener to a list that logs the text content of the clicked list item using event delegation</h2>
+        <ul id="myList">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Task 10: Add an event listener to a parent element that listens for events from dynamically added child elements.</h2>
+        <div id="parentDiv">
+            <button>Add New Button</button>
+        </div>
+        
+        <p id="output"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
