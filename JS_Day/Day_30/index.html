@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Social Media Dashboard</h1>
+    </header>
+
+    <main>
+        <!-- Sidebar for User Information -->
+        <aside class="sidebar">
+            <h2>User Profile</h2>
+            <div id="user-profile">
+                <!-- User Info (Populated via JavaScript) -->
+                <p>Username: <span id="username"></span></p>
+                <p>Email: <span id="email"></span></p>
+                <img id="profile-picture" src="default-profile.png" alt="Profile Picture" />
+                <button onclick="logoutUser()">Logout</button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <section class="main-content">
+            <!-- Post Form -->
+            <div id="post-form">
+                <h2>Create a New Post</h2>
+                <form onsubmit="createPost(event)">
+                    <textarea id="post-text" placeholder="What's on your mind?" required></textarea>
+                    <input type="file" id="post-image" accept="image/*">
+                    <button type="submit">Post</button>
+                </form>
+            </div>
+
+            <!-- Post Feed -->
+            <div id="post-feed">
+                <h2>Feed</h2>
+                <div id="posts">
+                    <!-- Posts will be dynamically added here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Notifications Sidebar -->
+        <aside class="sidebar">
+            <h2>Notifications</h2>
+            <div id="notifications">
+                <!-- Notifications will be dynamically added here -->
+            </div>
+        </aside>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
